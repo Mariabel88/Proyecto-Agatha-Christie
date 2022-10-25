@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(223, 143, 39);
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Caveat', cursive;
+    color: rgb(238, 228, 228);
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.logo{
+    float: left;
+}
+
+.logo span{
+    color: #333;
+    
+}
+
+.barra{
+    float: right;
+}
+
+.barra ul{
+    list-style: none;
+}
+.barra ul li{
+    display: inline-block;
+    text-align: center;
+}
+.barra a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+.barra a:hover{
+    color: #222;
+    text-decoration: underline;
+}
+
+main{
+    height: 450px;
+    width: 100%;
+    background-image: url(imagenes/logo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.call{
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 0.5px;
+    float: right;
+    background-color: rgba(51, 51, 51, 0.548);
+    padding: 5px;   
+    border: 2px solid #ccc;
+    margin: 10px;
+    width: 35%;
+    background-color: #a6c09c49;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23dbc64e' fill-opacity='0.21' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+h1{
+    color: rgb(22, 18, 18);
+    text-shadow: 0 0 1px#fff;
+    margin-bottom: 20px;
+}
+.call p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.call a{
+    background-color: rgb(204, 209, 223);
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    float: right;
+}
+
+h2{
+    background-color: chocolate;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 0 0 5px #333;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.sec{
+    height: 700px;
+    width: 100%;
+    background-image: url(imagenes/librosdeagathaenmesa.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: rgba(255, 248, 248, 0.842);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px;
+}
+
+.grid-container{
+    width: 100%;
+    border: #333;
+    background-color: rgba(34, 34, 34, 0.692);
+    display: grid;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.list-container{
+    width: 100%;
+    height: auto;
+    border: #333;
+    background-color: rgba(34, 34, 34, 0.63);
+    list-style-position: inside;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    font-size: 20px;
+}
+    
+.galeria{
+    background-image: url(imagenes/librosdeagathaenmesa.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    grid-gap: 20px;
+    padding: 20px;
+
+}
+
+.item{
+    width: 80%;
+    border: 2px solid #fff;
+}
+.item:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: invert(30%);
+}
+.item1{
+    background-image: url(imagenes/asesinatoenelexpresodeoriente.png);
+    background-size: cover;
+    background-position: center;
+    transform: translate(100px, 20px);
+    animation-timing-function: linear
+    
+}
+.item2{
+    background-image: url(imagenes/librosdeagathachristie.png);
+    background-size: cover;
+    background-position: center;
+    transform: rotate(20deg);
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.item3{
+    background-image: url(imagenes/agathaysuslibros.png);
+    background-size: cover;
+    background-position: center;
+    transform: rotateX(20deg);
+    animation-timing-function: ease-in;
+
+}
+.item4{
+    background-image: url(imagenes/agathabiblioteca.png);
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(20deg);
+    animation-timing-function: ease-in-out;
+
+}
+.item5{
+    background-image: url(imagenes/muerteenelnilo.png);
+    background-size: cover;
+    background-position: center;
+    transform: rotateZ(-20deg);
+    animation-timing-function: step-start;
+}
+.item6{
+    background-image: url(imagenes/agatha-christie-1280x720-1.png);
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.2);
+    animation-timing-function: ease-out;
+}
+.item7{
+    background-image: url(imagenes/imagesproyectowebchristie.png);
+    background-size: cover;
+    background-position: center;
+    transform: skew(-30deg);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.item8{
+    background-image: url(imagenes/missmarple.png);
+    background-size: cover;
+    background-position: center;
+    transform: skewy(30deg);
+    animation-timing-function: step-start;
+
+}
+footer{
+    background-color: peru;
+    text-align: center;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Caveat', cursive;
+}
+
+@media only screen and (min-width:480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(4, 200px);
+    }
+    .grid-container{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px 200px;
+    }
+}
+
+.redes{
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+.redes a{
+    color: #fff;
+}
+
+.redes a:hover{
+    color: #333;
+    text-shadow: 0 0 3px rgb(0,0,0);
+}
+
+.subir{
+    height: 45px;
+    width: 45px;
+    background-color: plum;
+    border: 4px solid peru;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: orangered;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px orangered;
+}
